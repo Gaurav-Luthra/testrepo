@@ -1,0 +1,28 @@
+Project for practice c++11 skills
+Name : HappenPlanner (HP)
+
+Where to use HP: 
+In every organization, almost every team plans parties, events, outings etc and purchase gifts for party members for team members.
+So, In every team there is one or more person who has to take responsibility and spend so much of valuable time for event planning and execution. Its difficult to collect money from indivisiduals and track birthdays/anniversaries and other events, And to find discounted restaurents nearby or discounted gift shops every time.
+
+what HP does:
+
+* HP shall track the cyclic events like birthdays/anniversaries of every team member as well as one time events like marriage/promotion/others
+* HP shall send invite to every team member after configurable number of events. (e.g. organize party after 3 birthdays/anniversaries)
+* HP shall collect data from every team members. Type of data e.g. food preference, availability, date options etc.
+* In case of buying gift, HP shall send the contribution of each team member, except one for whom gift is getting purchased.
+* After collecting data from teams e.g. Outing/Home-Delivery, Veg/Non-veg, total number of persons, lunch/dinner/breakfast/evening-snacks, Date, time etc. HP will send the data to nearby list of favourite restaurents. There will be expiry timer, so the restaurents has to reply withing that time frame.
+* After gettig the data, restaurents will reply with availability, table booking, discounts/offers etc to the HP. HP will collect data from each and every restaurents and will send the data to every team member.
+* Every team member will vote for their choice and HP will decide the restaurent which has highest votes. In case of tie between restaurents choice HP will start voting again and options will be just these tie restaurents. 
+* There will be expiry time for every request and with default answer. like if restaurent is not replying then default action will be "NO" etc.
+* Like restaurents, with gift shops also we can add some functionalities.
+
+High level Design direction:
+-> There can be one base class for teams and many teams can be derived from that base class. Same way we can make restaurents and gift shopts.
+-> There will be central management system which will manage the core logic for sending requests and gettting responses from teams, restaurents, gift shops.
+-> There will be timer class, which will send the notifications for all the cyclic and non-cyclic team events and will manage the expiration of invites from various modules.
+
+Concepts of C++11:
+I think we can use most of the features of our previous sessions. Its early to decide where to use what feature now only.
+Like in every class we can use move constructors. We can use auto in interators, lambdas for funtion pointers, we can use delegating constructors etc.
+
