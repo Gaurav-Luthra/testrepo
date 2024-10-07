@@ -1,0 +1,32 @@
+{
+  "name": "user-management-service",
+  "version": "1.0.0",
+  "description": "This project is part of personalized learning platforms for software developers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaurav-Luthra/testrepo.git"
+  },
+  "keywords": [
+    "Lab",
+    "Repository",
+    "For",
+    "Personalized",
+    "learning"
+  ],
+  "author": "Gaurav Luthra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaurav-Luthra/testrepo/issues"
+  },
+  "homepage": "https://github.com/Gaurav-Luthra/testrepo#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0"
+  }
+}
